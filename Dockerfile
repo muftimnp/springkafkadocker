@@ -1,7 +1,6 @@
 FROM maven:3.8.4-openjdk-8
 
 ADD target/mufti-belajar.jar mufti-belajar.jar
-
 ## Refer to Maven build -> finalName
 #ARG JAR_FILE=target/mufti-belajar.jar
 #

@@ -7,6 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile
     #    image: "mufti-belajar.jar"
+    networks:
+      - broker-kafka
     ports:
       - "8080:8080"
     depends_on:
@@ -21,6 +23,8 @@ services:
   postgresku:
     image: postgres:12
     #    image: postgres
+    networks:
+      - broker-kafka
     ports:
       - "5432:5432"
     environment:
